@@ -1,0 +1,4 @@
+# Rust executables
+*.exe
+*.out
+*.o
