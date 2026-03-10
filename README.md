@@ -23,8 +23,9 @@ This repository documents my progress while learning Rust through small exercise
 - Expressions and statements
 - How Rust handles variable mutability
 - Constants rules and Global scope
+- Shadowing in Rust (shadowing ≠ mutability) and unique shadowing effect on the type. (like an implicit type coercion without needed to type annotate unlike mut)
 
-...Up next: Shadowing
+...Up next: Comments
 
 ## Repository Structure
 
