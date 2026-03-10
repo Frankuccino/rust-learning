@@ -41,3 +41,14 @@ Understand Rust fundamentals and eventually build more advanced programs using:
 - Structs and enums
 - Pattern matching
 - Cargo projects
+
+## Recall Lessons Draft & Check Accuracy of recall.
+
+Recall the important concepts/lessons that was previously finished and check the validity of it after once done. Do this by tommorow upon getting back to work.
+
+- functions
+- ownership
+- references & borrowing
+- variables
+- constants
+- shadowing
