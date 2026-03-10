@@ -33,7 +33,50 @@
 // These rules are actually in the rust book https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html#ownership-rules
 // Keep them in your mind. 
 
+// Example: Each value in Rust has a variable that's its owner
+
+// fn main() {
+//     let s1 = String::from("Rust");
+//     let len = calculate_length(&s1);
+//     // Notice, we are not going to pass the s1, we are passing the reference to that string, so it actually borrowed s1 by this reference.
+//     println!("Length of '{}' is {}", s1, len);
+// }
+
+
+// If we'll create a function that will calculate the length of the string, and this function takes s, and this s is the input (the striing), but it's not going to be the values of that string, it's going to be simply a reference to that string.
+// So any reference is going to be preceded by an & ampersand sign, and it's going to result into usize or unsigned size
+
+// fn calculate_length(s: &String) -> usize {
+//     s.len()
+// }
+
+// So rust has accessed the strings' data without taking the ownership, the ownership of the string remains with the s1.
+
+// ------
+// 2. - There can only be one owner at a time.
+// fn main() {
+//     let s1 = String::from("Rust");
+//     let s2 = s1;
+
+//     println!("{}", s2);
+// }
+// what we have done here is that we have actually transferred the ownership of that string, being s1 to a new variable called s2.
+ 
+// There can only be one owner at a time.
+
+
+// --------
+// 3. - When the owner goes out of scope, the value will be dropped.
 fn main() {
-    println!("Hello, world!");
+    let s1 = String::from("Rust");
+    let len = calculate_length(&s1);
+    println!("Length of '{}' is {}", s1, len); 
 }
-// Will continue this by tomorrow
+// s1 goes out of scope and its value will be dropped.
+// fn printLost(s: &String) {
+//     println!("{}", &s1);
+// }
+
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
