@@ -21,9 +21,10 @@ This repository documents my progress while learning Rust through small exercise
 - Memory efficiency of references
 - Concept of heap vs stack allocation
 - Expressions and statements
-- how Rust handles variable mutability
+- How Rust handles variable mutability
+- Constants rules and Global scope
 
-...Up next: Ownership
+...Up next: Shadowing
 
 ## Repository Structure
 
