@@ -77,3 +77,20 @@ fn main() {
         Err(e) => println!("Error: {}",e),
         } 
 }
+
+// Mental Rule Rust Developers Use:
+// Option → absence of value
+// Result → error occurred
+
+// Find user in database → Option<User>
+// Connect to database → Result<Connection, Error>
+
+// Most important Rust Shortcut, a very powerful operator for Result: ?
+// fn example() -> Result<f64, String> {
+//     let value = divide_result(10.0, 2.0)?;
+//     Ok(value * 2.0)
+// }
+// ? means
+// If Ok → continue
+// If Err → return the error immediately
+// This is Rust's most important features.
