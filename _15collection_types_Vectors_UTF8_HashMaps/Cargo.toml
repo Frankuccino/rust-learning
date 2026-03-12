@@ -1,0 +1,6 @@
+[package]
+name = "_15collection-types_Vectors_UTF8_HashMaps"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
